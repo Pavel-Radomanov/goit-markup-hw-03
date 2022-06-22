@@ -15,8 +15,10 @@ box-sizing: border-box;}
     h2,
     h3,
     h4,
-    p
-    {margin: 0;}
+    p,
+    ul
+    {margin: 0;
+    }
     
 .img{
     display:block;
@@ -62,7 +64,7 @@ overflow: hidden;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-align: left; /*?*/
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .design-list li {
@@ -72,16 +74,17 @@ overflow: hidden;
 }
 .design-nav{
     display:flex;
+    margin:0;
+    padding-left:93px;
     }
-.design-nav-top {
-    margin-right: 50px;
-    margin-bottom: 0px;
-} 
-.design-nav-top a:last-child {
-    margin-right: 0px;}
+.design-nav>.item-link:not(:last-child){margin-right: 50px;}
+
+
+
 
 .link-hi{
     display:block;
+    
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -156,17 +159,19 @@ margin-right: 0;
 }
 .head-hero{
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero {
+    display:block;
+    padding-top:200px;
+    padding-bottom:200px;
     
-    padding-top: 200px;
-    padding-bottom: 30px;
-    
-    width: 1600px;
     background-color: var(--f-color);
     
     color: #FFFFFF;
@@ -181,7 +186,7 @@ margin-right: 0;
 
 .btn {
     display: block;
-    margin-top: 0;
+    margin-top:30px;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -211,6 +216,7 @@ margin-right: 0;
     display:flex;
     padding-left: 0;
     padding-top:94px;
+    padding-bottom: 94px;
     justify-content:space-between;
 }
 .benefits.item{
@@ -240,14 +246,14 @@ margin-right: 0;
     width: 270px;}
  
         .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            overflow: hidden;
-            border: 0;
-            clip: rect(0 0 0 0);
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
         }
 
 
@@ -269,10 +275,18 @@ margin-right: 0;
     margin: calc (var (--indent) / 2);
 
 }*/
+.section-work {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 94px;
+    margin:0;
+}
+
 .work-f{
 display:flex;
 padding-left: 0;
-padding-bottom: 94px;
+padding-bottom: 0px;
+padding-top: 0;
 
 }
 .work-f-item{
@@ -284,8 +298,8 @@ margin-right: 30px;
 }
 .work2 {
     display:block;
-    padding-top:94px;
-    padding-bottom: 50px;
+    padding-top:0;
+    margin-bottom: 50px;
     padding-left:auto;
     padding-right:auto;
     
@@ -312,25 +326,30 @@ margin-right: 30px;
     background-color: #F5F4FA;
     width: 1170px;}
     
-
-.personal-hdr{
+.section-staff{
     display: block;
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
+    margin: 0;
+}
+.personal-hdr{
+    display: block;
+    
+    margin-bottom: 50px;
     min-width: 264px;
     margin-left: auto;
     margin-right: auto;
 }
 .personal{
     display:flex;
-    padding-left: 0;
-    padding-right: 30px;
-    padding-bottom: 94px;
     margin:0;
+    padding: 0;
+    
+    
 }
 .personal-item{
     display:block;
-    padding-bottom: 108;
+    
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -349,9 +368,9 @@ margin-right: 30px;
 .personal-position{
     display: block;
         
-        padding-bottom: 30px;
-        padding-left: auto;
-        padding-right: auto;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
 }
 .personal-img{
     display:block;
@@ -402,19 +421,27 @@ margin-right: 30px;
 
 /*Portfolio*/
 /*Filters*/
+.section-portfolio{
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 94px;
+    margin: 0;
+}
 .filters-position{
     display:flex;
     justify-content:center;
     margin:0;
     padding:0;
     padding-bottom: 56px;
+    
 }
 .filters-position:last-child{
     margin-right:0;
 }
 .btn-dist{
     margin-right: 8px;
-margin-bottom: 0px;
+    margin-bottom: 0px;
+    padding:6px 22px;
 }
 .btn-filters button {
     color: #212121;
@@ -457,7 +484,7 @@ margin-bottom: 0px;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+    
     margin-left: calc(-1 * var(--indent));
 margin-top: calc(-1 * var(--indent));}
 
@@ -489,10 +516,12 @@ margin-top: calc(-1 * var(--indent));}
 
 .card-content {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top:transparent;
 }
-
-.card-head {}
-
+.img-card{
+    display:block;
+}
 .card-about {
     margin-top: 5px;
 }

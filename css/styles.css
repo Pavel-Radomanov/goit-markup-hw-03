@@ -29,12 +29,15 @@ box-sizing: border-box;}
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section{
-    display: block;
-    padding-top: 0;
-    padding-bottom: 0;}
+    
+    
+    padding-bottom: 94px;
+    padding-top:94px;
+}
 
 .visually-hidden {
 position: absolute;
@@ -167,8 +170,9 @@ margin-right: 0;
     margin-left: auto;
     margin-right: auto;
 }
-.hero {
-    display:block;
+.hero{
+    width: auto;
+    height: 600px;
     padding-top:200px;
     padding-bottom:200px;
     
@@ -212,11 +216,11 @@ margin-right: 0;
 }
 
 
+
 .benefits-f{
     display:flex;
     padding-left: 0;
-    padding-top:94px;
-    padding-bottom: 94px;
+    padding-right:0;
     justify-content:space-between;
 }
 .benefits.item{
@@ -243,6 +247,7 @@ margin-right: 0;
 .prgrf {
     margin-left: 0;
     display: block;
+    margin-bottom:94px;
     width: 270px;}
  
         .visually-hidden {
@@ -275,12 +280,12 @@ margin-right: 0;
     margin: calc (var (--indent) / 2);
 
 }*/
-.section-work {
+/*.section-work {
     display: block;
     padding-top: 27px;
     padding-bottom: 94px;
     margin:0;
-}
+}*/
 
 .work-f{
 display:flex;
@@ -296,9 +301,11 @@ margin-right: 30px;
 .work-f:last-child {
     margin-right: 0;
 }
+
 .work2 {
     display:block;
     padding-top:0;
+    
     margin-bottom: 50px;
     padding-left:auto;
     padding-right:auto;
@@ -322,15 +329,22 @@ margin-right: 30px;
     letter-spacing: 0.03em;
     color: #212121;
 }
+
+
+
+
+
+
+
 .back {
     background-color: #F5F4FA;
-    width: 1170px;}
+    }
     
 .section-staff{
-    display: block;
+    
     padding-top: 94px;
     padding-bottom: 94px;
-    margin: 0;
+    
 }
 .personal-hdr{
     display: block;
